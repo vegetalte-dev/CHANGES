@@ -1,0 +1,31 @@
+===================================
+Since Thu Mar  5 11:54:01 UTC 2015
+===================================
+
+
+   * device/bq/vegetalte/
+9dad49f Initial commit
+
+   * device/xiaomi/armani/
+eb33703 Revert "Enable fastcharge"
+63c340a Changes in camera default config
+903021a Add init for WCDMA and CDMA variants
+bddf9fe Change composition type to dyn
+ec2d28d Increase speaker gain
+22fa3de Update wcnss_xiaomi
+857a8ad Update sec_config
+ad7f2fd Updates in framework base overlay
+a419bb7 Add GPS HAL
+
+   * system/vold/
+68368dc some return codes validation
+
+   * vendor/bq/
+2af8b7b Initial commit
+
+   * vendor/cm/
+89a1ce7 APN: Add Pepephone 4G
+
+   * vendor/xiaomi/
+514cc85 Add new GPS blobs
+
