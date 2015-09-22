@@ -1,0 +1,1050 @@
+===================================
+Since Fri Sep 18 14:52:37 UTC 2015
+===================================
+
+
+   * build/
+86ea4c8 Revert "build: better zsh dopush support"
+
+   * device/qcom/sepolicy/
+0e7a34a Revert "SEPolicy : Added policy for oma drm"
+4cf68fa SEPolicy : Added policy for oma drm
+10ac2c3 seandroid: imscm needs to communicate with apps
+5270bef Sepoilcy : add new file for CSVT specific policies
+1c200f0 Seandroid: Allow dumpsys to work from adb shell
+cd60a25 sepolicy: policy for imscm to app binder call
+
+   * device/xiaomi/armani/
+21d133a cpufreq: Disable io_is_busy
+9695ce8 sepolicy: Address mpdecision and thermal denials
+f43737a sepolicy: Address mpdecision denials
+5ed4fbe sepolicy: Address more denials
+3ba36b3 sepolicy: Address mediaserver denial
+
+   * external/bluetooth/bluedroid/
+cd9e008 Bluetooth: Unlock mutex before destroying the BTIF task
+9f2be75 BLuetooth: Avoid calling bte disable for the second time
+
+   * external/libphonenumbergoogle/
+6d3030c JAVA: Update metadata for ID to include 12 digits for possible numbers
+
+   * frameworks/av/
+2cdeeb4 Fix integer overflow in time conversion
+
+   * frameworks/base/
+89b9cd6 SysUI: Clean up objects when recreating statusbar
+475550b Make toggling No Interruptions mode via volume buttons possible
+4908755 SystemUI: don't recreate zen controller, handler thread
+d427e02 SystemUi: Don't show cellular data tile on secondary users.
+2528351 SystemUI: improve circle battery
+8662a90 Revert "SettingsProvider: change default battery style to portrait"
+4b142f2 SystemUI: set fingerprint auth properly after occluded change
+218c622 SystemUI: fix crypt keeper race condition
+e8aa66a core: Fix Wi-Fi string
+374fbec DocumentsUI: Move & improve CAF string
+833c57a IMS: revert: ims: More backwards-compatibility stuff
+aee76d5 IMS Connection Capabilities Update
+6a20d79 IMS: Allow add participant with normal IMS call.
+82d5654 IMS: Initialize audio quality with NONE instead of AMR_WB.
+295e0b5 Fixing conference merge where only one party is added to conference.
+de0075a Add call log types definition for Ims call.
+c863af5 IMS-VT: Add additional error codes for upgrade downgrade
+124c7a4 Ims: Add support to query Packet Count and Packet Error Count
+98cf893 Add support for wifi calling settings
+e0b36f6 IMS: During CS retry, propagate reason code to UI
+7b8901e IMS: add ImsConfig api to get volte provisioned value.
+72f516e IMS: change getMasterValue to getProvisionedValue.
+2ffc454 IMS: Add interface to query call forward for specific service class.
+5c7a35c Revert "ims: Bring in line with current release"
+57a2155 QS: Update visibility of items in Bluetooth/WiFi tiles
+570eb5f Themes: Set composed icon scale to 1f default
+865f39e Default to Resolver Theme
+4f7c0f2 SettingsProvider: move Profile picker activity (1/2)
+8bfc137 SystemUI: add missing super viewgroup method calls
+
+   * frameworks/native/
+b5f98d7 Set explicit ioprio where required
+f12bd0c input: Adjust priority
+
+   * frameworks/opt/telephony/
+8c34198 IMS: During CS retry, propagate reason code to UI
+e8cceac Revert "IMS phone instantiation: add polling on base phone creation"
+5003df2 IMS: Fix CF icon issue when enable from UI.
+b972ca1 IMS: Fix ConcurrentModification exception during SRVCC.
+305df78 IMS: Propagating MMI error string to UI
+33d4741 Fix the issue that Volte call is not cleaned up properly from telephony framework when call failure is notified through dial command response.
+a579503 IMS: Ims Registration error codes support
+31ac4e2 IMS: add the api to get IMS registration information.
+d2727fc IMS: Add support for sending ADD_PARTICIPANTS response to apps.
+5c51019 Notify ServiceState for IMS registration
+d921af2 IMS: Turn on radio during wifi scenario
+e4e5824 Ims: Enable IMS feature in multi-sim
+c865900 Revert "telephony: Bring IMS in line with current relese"
+
+   * hardware/qcom/display-caf/msm8916/
+7313236 hwc: Set ioprio for vsync thread
+c115bfd qdutils: Fix misleading log message
+
+   * hardware/qcom/display-caf/msm8960/
+6d8eb85 hwc: Set ioprio for vsync thread
+
+   * hardware/qcom/display-caf/msm8974/
+2ca9c7a hwc: Set ioprio for vsync thread
+
+   * hardware/qcom/display-caf/msm8994/
+0088877 hwc: Set ioprio for vsync thread
+
+   * kernel/bq/piccolo/
+96711d2 qcom: subsystem_restart: Add piccolo changes
+2cf448a qcom: peripheral-loader: Add piccolo changes
+ccad16c soc: qcom: pil: Add piccolo changes
+8661731 Revert "soc: qcom: pil: Allow the MBA memory to be dyanmic or a carveout"
+ff3849e Revert "qcom: peripheral-loader: Introduce an API to free relocatable memory"
+32e095d Revert "qcom: subsystem_restart: Introduce a callback to free memory"
+942cb00 Revert "ARM: dts: msm: Add separate CMA region for modem mba for MSM8916"
+cd6960b Revert "ARM: dts: msm: Add mba-mem subdevice node for MBA region on MSM8916"
+
+   * kernel/xiaomi/armani/
+b5cffce Power: Changes the permission to read only for sysfs file /sys/kernel/wakeup_reasons/last_resume_reason
+3db8fd3 Power: Add guard condition for maximum wakeup reasons
+76865df POWER: fix compile warnings in log_wakeup_reason
+5278b48 Power: add an API to log wakeup reasons
+579a6a1 ARM: dts: msm8226: Raise msm-thermal limit temp
+732f2d8 msm: acpuclock-8226: Limit DDR to 200MHz for APSS frequency
+9482b34 msm: acpuclock-8226: update corner mapping for 1.2 and 1.4 GHz speedbins
+9c22323 msm: mdss: Adding lcd notifier
+
+   * packages/apps/Contacts/
+4cf2e2c Contacts: Add contact lookup with attribution to quick contacts
+
+   * packages/apps/ContactsCommon/
+571f584 ContactsCommon: Add ability to show looked up contacts for quick contacts
+
+   * packages/apps/Gallery2/
+40a304a Move & improve CAF strings
+704bff7 Gallery2 : Delete and Details options are not visible on Camera preview
+ea87a93 Gallery2 : Video share option is not working
+
+   * packages/apps/Profiles/
+aa39fbc Profiles: add profile picker Activity (2/2)
+
+   * packages/apps/Settings/
+d0fcca7 Add option to set default custom function to button recents (2/2)
+4d9c12c Hide LCD density preference from secondary users
+
+   * packages/services/Telecomm/
+7f9cf3c Save Ims related call log after call disconnected.
+
+   * packages/services/Telephony/
+b7e3641 Move & improve Wi-Fi call settings strings
+ee6225f IMS: Allow dial with empty URI List.
+2c2eb43 IMS: Fix crash during midcall disabled multicall SRVCC.
+62f16af IMS: Allow add participant with normal IMS call.
+8d2d16b IMS: Turn on radio during wifi scenario
+8524741 IMS: Update conferenceHostConnection state for a conference call
+ba90b47 Revert "Ims: Update conferenceHostConnection state for a conference call"
+5468475 MSIM IMS: convert to phone ID based selection.
+14c4ce8 IMS Conference notifyConferenceStarted API
+70144a4 Add support for Wifi calling settings UI
+37f3ebb Ims: UI changes for Packet Count and Packet Error Count
+
+   * system/core/
+0b169c3 healthd: Use android blue for charge percentage
+8df64c7 cutils: Remove ioprio magic
+3328ca3 cutils: Clean up ioprio grouping
+a642430 cutils: Fix display ioprio
+d666fed cutils: Fix copypasta in ioprio code
+
+   * vendor/cm/
+6884792 sepolicy: Allow system app to set boot anim property
+da7d187 APN: add Sprint MVNO Ringplus, Ting update
+b61b6df cm: Clean up cgroups even more!
+dcbf2aa cm: Clean up cgroups
+e2f23f0 cm: Fix a few denials
+100cc8e cm: Remove xattr option from bfqio cgroup
+4462dfa cm: Update shared init.rc
+d36909b Removes Empty String For Resolver
+
+   * vendor/cmsdk/
+e2daff9 CMSettingsProvider: Remove attempts at closing sqlite db
+806a91e packages: Remove CMResolver
+
+   * vendor/xiaomi/
+e99b36a Update qcom and radio from ZTE Nubia Z7 Max V3.55
+d2201f8 Update drm from https://github.com/TheMuppets/proprietary_vendor_motorola/tree/cm-12.1/msm8226-common
+6861231 Set origin of blobs
+5ad8915 Update venus and wcnss firmware from Xiaomi's Kitkat release V6.7.1.0
+aebc7e8 Update gps from Xiaomi's Kitkat release V6.7.1.0
+3ffff1b Update libqc-opt.so (again) from https://github.com/TheMuppets/proprietary_vendor_sony/tree/cm-12.1/msm8226-common
+2cb6cc1 Update thermal and mpdecision from Xiaomi's Kitkat release V6.7.1.0
+
+===================================
+Since Wed Sep 16 14:47:10 UTC 2015
+===================================
+
+
+   * device/bq/piccolo/
+5f976aa cmhw: Add Vibrator control support
+
+   * device/bq/vegetalte/
+dd03040 cmhw: Add Vibrator control support
+
+   * device/xiaomi/armani/
+0c1c78c Update fingerprint to latest release
+daf31e8 CPUFreq: Set optimal frequency for msm8226
+
+   * frameworks/base/
+29a962a Fix race condition in panel expansion handling.
+0df1e42 base: fix window bounds for left hand navigationbar
+55ab726 Fix animation sequence for upload tasks
+a5979d6 framework: add string for wifi subscription change notification
+b179291 SystemUI: don't show recents if not provisioned
+f72c87c Fingerprint wakeup: more consistent behavior
+0d2a35e Allow disabling the privacy guard notification (2/2)
+
+   * frameworks/opt/net/wifi/
+5a4704d wifi: disable access point on subscription change
+1392c1a Merge branch 'LA.BF64.1.2.1_rb2.33' of git://codeaurora.org/platform/frameworks/opt/net/wifi into cm-12.1
+
+   * hardware/qcom/display-caf/msm8916/
+e9f7b80 display: Set thread priority using cutils
+
+   * hardware/qcom/display-caf/msm8960/
+d9816c5 display: Set thread priority using cutils
+
+   * hardware/qcom/display-caf/msm8974/
+36acb02 display: Set thread priority using cutils
+
+   * hardware/qcom/display-caf/msm8994/
+a70c883 display: Set thread priority using cutils
+
+   * kernel/bq/piccolo/
+d3323c0 Revert "power: reset: fix bug on warm reset or hard reset selection"
+eea210c Merge remote-tracking branch 'caf/LA.BR.1.1.3_rb1.30' into cm-12.1-test
+c165cfe qpnp-vibrator: Implement sysfs interface for vibrator intensity control
+
+   * kernel/bq/vegetalte/
+25b0bd5 Revert "power: reset: fix bug on warm reset or hard reset selection"
+a228abb Merge remote-tracking branch 'caf/LA.BR.1.1.3_rb1.30' into cm-12.1-test
+e90766b qpnp-vibrator: Implement sysfs interface for vibrator intensity control
+
+   * packages/apps/CMFileManager/
+7676605 [CMFileManager] Fix fail to move a folder
+
+   * packages/apps/Settings/
+bcf06e6 Allow disabling the privacy guard notification (1/2)
+d29d0c0 Setting: Match brightness override padding to volume override
+fb64f25 APN: Fix typo
+
+   * packages/apps/SetupWizard/
+edaab88 SetupWizard: Tweak logic for showing/hiding sim missing page
+
+   * packages/apps/Trebuchet/
+e13df0d Ensure spans do not fall below minimum spans.
+
+   * system/core/
+54521d0 Revert "Add HTC Logging functions to support newer HTC props."
+
+   * vendor/cm/
+c815f70 cm: Set IOPS mode for CFQ and BFQ automatically
+78c6df1 vendor/cm: Remove custom resolver from OSS builds.
+
+===================================
+Since Tue Sep  8 13:06:20 UTC 2015
+===================================
+
+
+   * android/
+45a8077 android-5.1.1_r13 -> android-5.1.1_r18
+0ced69b Add hardware/cyanogen
+2c98138 android-5.1.1_r6 -> android-5.1.1_r13
+
+   * bionic/
+12eb9c5 bionic: Allow devices to add device specfic static libs
+
+   * bootable/recovery/
+53170a3 Don't remove existing explicitly stashed blocks
+18b30c0 Always use strerror to report errno in recovery.
+
+   * build/
+784fb8b build: Separate commands in recovery foreach loops
+58ff1ed img_from_target_files: Skip oem.img in fastboot image creation
+6ff590d Merge tag 'android-5.1.1_r18' into cm-12.1
+7598793 repopick: Update script with some fixes
+05bb2bb repopick: print the status of a skipped cherry pick
+f02693b Merge tag 'android-5.1.1_r13' into cm-12.1
+1966a9e build: Create a oem image when BOARD_OEMIMAGE_FILE_SYSTEM_TYPE is defined
+5dee2dd build: better zsh dopush support
+
+   * device/bq/piccolo/
+ae79deb sepolicy: Fix after the latest CM changes
+29d511a cmhw: TapToWake: Enable only if control path exists & cache setting state
+0b603f1 liblight: Fix blink
+8261e2e liblight: Fix some issues Based on @dh-harald changes for Xiaomi Mi4i
+4e34310 Initial commit
+
+   * device/bq/vegetalte/
+c7a9c7c sepolicy: Fix after the latest CM changes
+e73baa5 cmhw: TapToWake: Enable only if control path exists & cache setting state
+93da117 Overlay: Enable dialog for SIM import
+d87f159 liblight: Fix blink
+
+   * device/qcom/common/
+4697ca4 common: Change the Hi-Speed freq to 800Mhz for camcorder case
+ec19782 power: override encode hint for 8909
+8a0837c power-8994: Adjust options for perf
+0e72bb4 power: Cleanups and improvements
+
+   * device/qcom/sepolicy/
+0f009b0 sepolicy: Include qcom-specific sepolicy from vendor/cm
+ce47ba2 SEPolicy : Added policy for oma drm
+
+   * device/xiaomi/armani/
+9089cb5 sepolicy: Use correct permissions for CMHW
+6070ad3 sepolicy: Remove display policy items
+b0e5f73 sepolicy: Cleanup system_server
+c015ce5 Enable dex-preoptimization
+9e6937e Enable BFQ IO scheduler by default
+
+   * external/libpng/
+a23466e Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * external/skia/
+8876213 Merge tag 'android-5.1.1_r18' into cm-12.1
+
+   * external/sonivox/
+80852d4 Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * external/whispersystems/WhisperPush/
+21cbcdc Automatic translation import
+
+   * external/wpa_supplicant_8/
+7902b17 Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * frameworks/av/
+e299e7c frameworks/av : Drm media file uses mm-parser sniffer
+d2612cc Media: Make media support DRM file's playing
+4d97392 audiopolicy: Fix the incall fix
+613cdc2 audiopolicy: Never use low-latency audio for ringtones
+d75bc98 Merge tag 'android-5.1.1_r18' into cm-12.1
+93c657f Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * frameworks/base/
+42e4626 Fixed: Wrong status bar notification layout width.
+0214754 fingerprint wakeup: improve state and error handling
+d67c242 QS: Make WiFi and Bluetooth tile detail view consistent
+85560c7 Recents: Delay cleanup of remaining tasks when dismissing
+8e4edf8 Consider using app adj to identify if it is a B-service
+e5a1f01 Replacing FloatMath native implementation with calls to Math
+3530c1f DocumentsUi : Drm lock icon can be shown on documnets picker view.
+066cbcf DocumentsUi : Drm lock icon is added for drm content
+5fc85fe frameworks : Introduced new private DRM APIs in graphics library
+9343282 frameworks/base : Added support for OmaDrmEngine
+6527270 frameworks/base : Remove drm api entries from current.txt
+c2a5c2d libdrm: Added support for Combined Delivery and Separate Delivery
+515534b Revert "Remove obsolete OMA-DRM support".
+c0ee567 Added Changes for Custom Resolver Activity
+e05c676 Fingerprint wakeup: don't count failed attempts when screen is off
+aa7e8eb Wallpaper: Create new WallpaperObserver on user switch
+03eb365 SystemUI: Fix NPE
+a4c16c1 telephony: Handle NPE in setDataEnabledUsingSubId()
+395844b Lights with screen on: Don't disable leds after the lockscreen
+45d536b Automatic translation import
+c66f44b core: Reduce mutex contention in ActivityManager
+94f7f45 fingerprint: wakeup and unlock
+a56a349 fingerprint: add generic set parameters
+30a053d SystemUi: Prioritize call notifications which interrupt.
+65d865b vibrator: Add a way to run the vibrator with reduced priority
+05d7414 Revert "Notifications: Only check for spam if new"
+700f1aa SettingsProvider: change default battery style to portrait
+f51611c Themes: Use current user ID when getting ThemeConfig
+1c28310 Merge tag 'android-5.1.1_r18' into cm-12.1
+8609249 Fix Custom Resolver Theming
+09ab447 Revert a couple of badly-behaving ActivityManager patches.
+9be79d9 Compilation fixes
+51d8e60 NetworkPolicyManagerService: Handling IllegalArgumentException
+acd7b6d Add network policy for each sub on powerup
+8efcb63 Camera: Longshot with Burst Functionality.
+ef19398 Merge tag 'android-5.1.1_r13' into cm-12.1
+553b97a Themes: Don't use themed fonts for non themable packages
+62629f2 Add broadcast and query API for AudioSource.HOTWORD.
+bd1c125 base: report wtf for external cm services
+cc9ef39 SpamFilter : Avoid a requery for each item
+6c93947 base: start nfc service prior to systemui
+4b1e4c6 SystemUI: unregister visualizer on hide
+edbf20e SystemUI: fix potential divide by 0 exception
+8b122ee SystemUI: hide visualizer when keyguard is occluded
+
+   * frameworks/native/
+236ebea Merge tag 'android-5.1.1_r18' into cm-12.1
+
+   * frameworks/opt/hardware/
+fa7272b cmhw: Add PersistentStorage API
+
+   * frameworks/opt/telephony/
+1d6d2e0 Blacklist : Add helper methods
+6ff91ff Telephony: Don't show as roaming if new state isn't in service.
+5c3af54 Merge tag 'android-5.1.1_r18' into cm-12.1
+0d7a1dd Catch possible NumberFormatException in ServiceStateTracker
+5a8338a Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * hardware/broadcom/libbt/
+6e7b90c libbt-vendor: Fix wisol string comparison
+04fa278 libbt-vendor: Add support for Samsung wisol flavor
+
+   * hardware/broadcom/wlan/
+6462419 Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * hardware/cyanogen/
+744c68c cmhw: Initial import of hardware/cyanogen
+
+   * hardware/libhardware/
+a4b99b7 fingerprint: add generic set_parameters
+2eb7781 amplifier: add set_parameters method
+
+   * hardware/qcom/audio-caf/msm8994/
+b1b9544 hal: notify amplifier of parameter changes
+
+   * hardware/qcom/display-caf/msm8916/
+1e93f5e hwcomposer: Add support to specify dynamic FPS when idle
+
+   * hardware/qcom/fm/
+dfd1a96 FMRadio : cleaned up band selection code
+b927b86 Automatic translation import
+600394a FMRadio : Select band based on country
+
+   * kernel/bq/piccolo/
+a34124e Merge AU_LINUX_ANDROID_LA.BR.1.1.3_RB1.05.01.01.032.050 on remote branch
+03ab4e6 Merge "iommu: msm: make iommu map and unmap atomic"
+de08e5e Merge remote-tracking branch 'caf/LA.BR.1.1.3_rb1.29' into cm-12.1-test
+bbf175a Merge "lpm: Free the allocated resource to avoid memory leak"
+fd86103 Merge "power: reset: fix bug on warm reset or hard reset selection"
+
+   * kernel/bq/vegetalte/
+a34124e Merge AU_LINUX_ANDROID_LA.BR.1.1.3_RB1.05.01.01.032.050 on remote branch
+03ab4e6 Merge "iommu: msm: make iommu map and unmap atomic"
+259fe467 Merge remote-tracking branch 'caf/LA.BR.1.1.3_rb1.29' into cm-12.1-test
+bbf175a Merge "lpm: Free the allocated resource to avoid memory leak"
+fd86103 Merge "power: reset: fix bug on warm reset or hard reset selection"
+
+   * kernel/xiaomi/armani/
+71c2007 f2fs: bring up to date with Jaegeuk's branch
+6317a24 armani: defconfig: Enable BFQ IO scheduler
+684a97d block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+c4cbd7f block: introduce the BFQ-v7r8 I/O sched for 3.4
+ef94c4c block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+
+   * packages/apps/BluetoothExt/
+0f33547 Automatic translation import
+
+   * packages/apps/CMAccount/
+a3cd431 Automatic translation import
+
+   * packages/apps/CMBugReport/
+68a66c2 Automatic translation import
+
+   * packages/apps/CMFileManager/
+93d66a3 Automatic translation import
+29cfd7e CMFileManager : Switch to checked states
+
+   * packages/apps/CMUpdater/
+aa16c9c Make updater notifications local only.
+c97bdfe Automatic translation import
+
+   * packages/apps/Calculator/
+57ce726 Automatic translation import
+
+   * packages/apps/Camera2/
+d4f3b73 Automatic translation import
+
+   * packages/apps/CertInstaller/
+1ab4169 Catch corrupt cert error
+
+   * packages/apps/Contacts/
+6c3c589 Stop contact editor from adding empty field if no more types.
+b4021e7 Automatic translation import
+f0f345c Contacts : Ensure query excludes LOCAL_CONTACTS
+
+   * packages/apps/ContactsCommon/
+0d1284a Automatic translation import
+
+   * packages/apps/DeskClock/
+697a9d6 Fix wrong icon used in notification bar.
+cca96bb Automatic translation import
+
+   * packages/apps/Dialer/
+085f9a2 Automatic translation import
+
+   * packages/apps/Eleven/
+176ca32 Automatic translation import
+
+   * packages/apps/Gallery2/
+b00985f Gallery2 : Drm file can be set as wallpaper
+4f3e496 Gallery2 : Drm lock icon added on Photo widget for drm content
+f5b491b Gallery2 : GIF animated drm file can be visible in Gallery app
+01f5f34 Gallery2 : Uses internal Drm image decoder api in Gallery app
+43044da Gallery2 : Added support for Oma drm (CD and SD)
+829f9ad Gallery2: Make Gallery2 support OMADRM feature
+a5aa75d Gallery3d : Fix CROP_ACTION for third party apps
+78aee6b Automatic translation import
+
+   * packages/apps/InCallUI/
+3cb0f21 Automatic translation import
+
+   * packages/apps/LockClock/
+52d0cb8 LockClock: Force ltr on clock display.
+db50ca9 Automatic translation import
+4bdff09 LockClock : Ensure configuration screen doesn't crash on orientation
+
+   * packages/apps/Mms/
+5e7c1e9 Enable ': ' added after sender in notification bar ticker
+36140d3 Mms: For any working message, also use default sms sub for mms.
+81c5033 Automatic translation import
+19c8223 Mms : Fix OptionsActivity fragment instantiation
+c468db0 Mms: Utilize default sms sub id for mms transactions.
+86a2db4 Temp Fix: Localize Smilies in Ukranian
+
+   * packages/apps/Nfc/
+f5f5eef nfc: create a bootstrap service
+
+   * packages/apps/Settings/
+e3b16e9 Remove 'Pulse if battery low' option if unsupported
+ec7ff49 Use default subscription's slot ID when showing SIM status
+70275d2 Settings: reset root option selection as necessary
+2361249 Settings : Add input checks for blacklist input
+9e6b3e7 Settings: persist privacy guard dialogs across rotates
+9aa71cd Settings: fix rotation for managed service warning dialog
+ca8a696 Automatic translation import
+970f063 Settings : Update filterSpam to new contract
+
+   * packages/apps/SetupWizard/
+fa1be77 Revert "Bump HOME intent priority"
+aa2af71 Automatic translation import
+4fb57dc Bump HOME intent priority
+6c1d791 SetupWizard: Allow SetupWizard to use CMHW
+
+   * packages/apps/SoundRecorder/
+278a29c Automatic translation import
+
+   * packages/apps/Stk/
+c54e006 Merge tag 'android-5.1.1_r13' into cm-12.1
+
+   * packages/apps/Terminal/
+6f424a7 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+e8f4258 Automatic translation import
+
+   * packages/apps/Trebuchet/
+fb2b30b trebuchet: ensure crop bounds
+92bdfc0 Fix mismerge
+0b1bbdb Automatic translation import
+03b202e Trebuchet: Make sure callbacks are available on user change.
+
+   * packages/apps/TvSettings/
+c3bf17d Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+0d6cd35 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+ba848b1 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+f1ac0c3 BlacklistProvider : Use helper methods from utils for validity
+
+   * packages/services/Telecomm/
+1099907 Automatic translation import
+d2a9065 telecom: Use the low-priority vibrator for incoming calls
+
+   * packages/services/Telephony/
+c5af80d Automatic translation import
+6ff6899 TeleService: Remove HomeAsUp arrow for nested pref screens
+db69251 TeleService: Remove HomeAsUp arrow for nested pref screens
+301cb34 Revert "Network Settings: don't crash on bad lookup"
+
+   * packages/wallpapers/PhotoPhase/
+4ebe904 Automatic translation import
+
+   * prebuilts/cmsdk/
+ae4715e prebuilts/cmsdk: Update SNAPSHOT jar for api level 2.
+32e0307 prebuilts/cmsdk: Prepare for api 2 release, update text.
+c5f124b prebuilts/cmsdk: Update api level 2 for PersistentStorage.
+
+   * system/core/
+eeaeeb6 cutils: Add support for BFQIO cgroups
+fbb3be9 rootdir: Set ioprio for SurfaceFlinger
+8ce6fe3 Revert "libcutils/liblog: Add functions required by Huawei g620_a2 binaries"
+b767d5d Revert "Charger: Add font to show real battery capacity in charger mode."
+a2e20c3 Merge tag 'android-5.1.1_r18' into cm-12.1
+6306b5e Camera: Longshot with Burst Functionality.
+3e09a07 fs_mgr: When formating ext4 volumes, respect the length parameter
+d551b51 fs_mgr: zram: allow specifying stream count
+
+   * system/extras/
+e084215 f2fs_utils: fix block alignment calculation
+
+   * system/security/
+4212584 Merge tag 'android-5.1.1_r18' into cm-12.1
+
+   * vendor/cm/
+28dbc8b cm: Create cgroups for BFQIO
+b5c2cf0 cm: sepolicy: Create central place for QC-specific policy
+b5dbbdf cm: sepolicy: Create standard policy for LiveDisplay
+9cfe968 backuptool: Add checks if it makes sense to execute commands
+c6d40c0 Enable The AppSuggestService
+ed63484 tethering: Do not override DUN in shipping builds
+e4f75ba Update SPN override for China Telecom
+c37c231 vendor/cm: cmsettings -> cmpartnerinterface
+a385501 cm: SELinux policy for persistent properties API
+1fd23a9 CM SDK: rename SettingsManager to PartnerInterface
+
+   * vendor/cmsdk/
+0769cdb CMResolver: Optimize restart if we know we don't have suggestions.
+0d5b0b7 CMSettingsProvider: Update app name
+688a045 CMResolver: Fix bad equivalancy check by using known boolean.
+3c45665 cmsdk: Make sure the ACCESS_APP_SUGGESTIONS perm is not hidden.
+e78ca4d Added Application Suggestions.
+35df988 Automatic translation import
+d39c839 Update persistent storage permission string
+44b9ae4 Correct permission string.
+9f381bc cmsdk: Update api text for Persistent Storage API.
+7cef6f6 cmsdk: Add persistent properties API
+087f2b5 Update API txt files for cyanogenmod.media.MediaRecorder. Update API txt files for PartnerInterface.
+eabd575 Add Broadcast action and query API for AudioSource.HOTWORD.
+
+===================================
+Since Wed Sep  2 10:16:29 UTC 2015
+===================================
+
+
+   * android/
+12e54b8 manifest: Remove separate paths for 8610/8226 HALs
+
+   * bionic/
+db3fa6f cortex-a53: Use cortex-a7/bionic/memset.S instead of cortex-a15/bionic/memset.S
+3225b83 Remove pushes from memsets (krait/cortex-a9).
+22ee2dc Replace bx lr with update of pc from the stack.
+2e5e2d0 Use unified syntax to compile with both llvm and gcc.
+02b4462 Add optimized cortex-a7/cortex-a53 memset/memcpy.
+
+   * build/
+d7a213b Add darwin support for f2fs host tools
+f28d284 releasetools: Fix the bug when deleting files.
+2eeb136 releasetools: Fix the bug in symlink deletion.
+91f91b8 build: allow using host flex binary
+338b399 build: Allow QC platforms to share/customize HAL variants
+665e136 Revert "msm8909 uses the same branches as msm8916"
+4ad2485 msm8909 uses the same branches as msm8916
+
+   * device/bq/vegetalte/
+1ce405d Revert "Overlay: Disable led pulse settings"
+18e9f7f Reorganize & remove unused config
+fc14ba1 Update rootdir files
+981a551 prop: Add drm service
+3f931ff Update BT script
+
+   * device/qcom/common/
+fc552c7 power: Boost improvements
+3c85911 power: Update boost parameters
+e9f23d7 power: Updates for msm8916/msm8939
+
+   * device/qcom/sepolicy/
+a06d6bb sepolicy: perfd to have access to mediaserver
+
+   * external/busybox/
+0098dcf Define a writeable CONFDIR for iproute.
+714fe14 iproute - Don't hardcode the path to config files
+
+   * external/f2fs-tools/
+4ed43ea Fix f2fs_trim_device multiple definitions
+69e9384 Add darwin support for building the host tools
+
+   * external/mm-dash/
+c5ecbe1 build mm-dash on msm8909's
+
+   * frameworks/av/
+fd2e17b mediascanner: handle DATE tag
+
+   * frameworks/base/
+b1ef9fa power: Boost improvements
+aeb953d Add basic support for VorbisComment DATE tags
+19374cc SystemUI: Fix blinking when reported battery level is 0
+1518107 systemui: left hand navigation ring
+5c6f6b1 systemui: respect navigation rings configuration
+66763f1 Ringtones: Allow excluding from removable storage
+41fe4a0 Allow CAPTURE_AUDIO_HOTWORD to be whitelisted by signature.
+ad70f85 power: Add a new power hint for application launches
+c38b100 SystemUI: fix NPE crash when Visualizer is not initialized
+eafee42 systemui: wait for animation end before take a screenshoot
+af34189 Spam: Close writable DB after use
+777ba8a zygote: fix memory leak when fork process
+76133b7 Fingerprint: don't start auth if not showing
+59a9055 Allow default system profile state to be overlayed
+e1b61c1 Keyguard: Remove bouncer when re-registering status bar
+ed93fea Show infinity for large notification counts
+fa72641 Let liblights adjust the brightness of LEDs while previewing it
+da2b45a Notifications: Only check for spam if new
+
+   * frameworks/opt/net/ims/
+f804ec0 IMS CallGroup Cleanup for 4-Way Conference
+e7e5242 Ims: Enable IMS feature in multi-sim
+5b44e02 Ims: Add support to query Packet Count and Packet Error Count
+fd33435 Add support for wifi calling settings
+f0163c8 Add UT interface to query call forward setting for service class.
+4eae9cf IMS: During CS retry, propagate reason code to UI
+06f03a6 Revert "ims: Bring in line with current release"
+
+   * frameworks/opt/telephony/
+9319b2d Telephony: Make sure we're stripping non-digits prior checkDestination.
+60487ea telephony: Fix FrameworksTelephonyTests.
+
+   * hardware/libhardware/
+0f42a6c libhardware: Add POWER_HINT_LAUNCH_BOOST for PowerHAL
+
+   * hardware/qcom/display-caf/msm8916/
+26056c1 hwc: Reserve pipes for video layers first
+6aa55f2 hwc: Avoid MDP comp for RGB downscaled layer
+59e9973 hwc: Handle multiple YUV layer use case in low end targets
+99271ec hwc: Avoid updating refresh-rate if already done
+a75c025 hwc: Use GPU to compose for smaller updates
+e619991 hwc: Set refresh rate during idlefallback for unhandled cases
+d0707e1 hwc: Donot rely on previous comp type to trigger idlefallback
+8de2868 hwc: Roundoff the input fps to nearest standard fps
+15b0492 hwc: Trigger dynamic refresh-rate change for more usecases
+
+   * hardware/qcom/media-caf/msm8916/
+215b75e mm-video: Calculate average fps to update refresh rate
+dd5bb74 mm-video-v4l2: handle flush done as buffer_done and not as cmd_done
+4bc8d24 mm-video-v4l2: vdec: insert timestamps qeued by client in TS queue
+
+   * kernel/bq/piccolo/
+b49e329 Merge AU_LINUX_ANDROID_LA.BR.1.1.3_RB1.05.01.01.032.049 on remote branch
+b4f4b32 piccolo: Add missing audio config
+5be56e2 Merge "iommu: msm: remove CONFIG_MSM_IOMMU_TLBINVAL_ON_MAP"
+d7167aa Merge "msm: kgsl: Release process memory outside of mutex to avoid a deadlock"
+9f90fb3 dts: Disable clk lane recovery * It generates UI nasty glitch for us.
+8fb8c78 Merge remote-tracking branch 'caf/LA.BR.1.1.3_rb1.28' into cm-12.1-test
+f7736b1 piccolo: Update config
+b37842f Merge "cpufreq: interactive: enable use_sched_load early"
+
+   * kernel/bq/vegetalte/
+b49e329 Merge AU_LINUX_ANDROID_LA.BR.1.1.3_RB1.05.01.01.032.049 on remote branch
+5be56e2 Merge "iommu: msm: remove CONFIG_MSM_IOMMU_TLBINVAL_ON_MAP"
+d7167aa Merge "msm: kgsl: Release process memory outside of mutex to avoid a deadlock"
+893ac9a vegetalte: Stop log spam
+4f73b43 Merge remote-tracking branch 'caf/LA.BR.1.1.3_rb1.28' into cm-12.1-test
+b37842f Merge "cpufreq: interactive: enable use_sched_load early"
+
+   * packages/apps/CMFileManager/
+72920bf Indicate number of items to be deleted in confirmation dialog
+
+   * packages/apps/CMUpdater/
+4f8618b cmupdater: dont assume actionbar is present
+
+   * packages/apps/Calculator/
+f6a6522 Calculator: fix localization for the widget
+
+   * packages/apps/Eleven/
+441f4da REAL_GET_TASKS > GET_TASKS
+
+   * packages/apps/Exchange/
+d78074b exchange: delay_sync_on_auth_error
+
+   * packages/apps/Mms/
+61c63da Mms: Don't try to send an SMS to a null destination.
+f5f16e1 Fix mms failures due to invalid mmsc url
+3c75cf9 Mms: show default app icon for unresolved links
+309e658 REAL_GET_TASKS > GET_TASKS
+
+   * packages/apps/Settings/
+6d1cdbc settings: remove contributors cloud margin/padding
+94a0c9e Settings: Only show multi-sim card configuration for owners
+8530327 Long press no longer copies to clipboard if there is nothing to copy
+18cce10 APN: Filter MVNOs by SPN, GID1 and IMSI
+d108c69 Get a handle for UserManager at creation
+5a2f627 Protected apps: fixup rotation states
+f1bf96d settings: fix fc for system apps with null applicationInfo
+e99decb Settings: Avoid possible NPE if resolve infos return null.
+9405ef9 Settings: Fix a crash caused by null pointer
+ebedae7 Settings: Utilize cyanogenmod.permission.MODIFY_PROFILES.
+
+   * packages/apps/Stk/
+2ddb566 REAL_GET_TASKS > GET_TASKS
+6275b32 Indicate which sub-activity the app name broadcast applies to
+7b924c0 Add intent to send STK app name
+
+   * packages/apps/Trebuchet/
+f3c0e34 Trebuchet: fix potential NPE when info is null
+547e589 Support STK app rename on MSIM
+c1f4123 Trebuchet: STK app rename customization for latam region.
+
+   * packages/providers/TelephonyProvider/
+857572a TelephonyProvider: change default user nw mode to invalid
+
+   * packages/services/Telephony/
+d529e7a Network Settings: default user mode to preferred mode
+
+   * packages/wallpapers/PhotoPhase/
+54a7044 REAL_GET_TASKS > GET_TASKS
+
+   * system/core/
+0e9caa6 Fix build break for multiple definition
+979ef7f init: Fire a trigger when a class is started/stopped
+8af7057 sdcard: Properly handle deleted nodes
+4c1fa45 sdcard: Turn on noatime for fuse mounted sdcard
+
+   * system/extras/
+122ac16 Add darwin support for the host tools
+
+   * vendor/cm/
+26731f5 cm: Set the IO scheduler based on a system property
+cefa91c Update Spain APNs
+b31f746 Update India APNs to YU list
+44752b7 vendor/cm: add curl to build
+
+   * vendor/cmsdk/
+a458122 Allow whitelist for MODIFY_NETWORK_SETTINGS permission.
+26272cd Add Hotword audio capture constants.
+99b8c5d cmsdk: Update documentation for Boysenberry release.
+
+===================================
+Since Sat Aug 29 16:27:39 UTC 2015
+===================================
+
+
+   * bootable/recovery/
+2bf0866 updater: Hoist fsync() to outer loop.
+
+   * build/
+e703199 repopick: open changes are either NEW or OPEN, not just OPEN
+7e980a7 Fix custom URL error. Merged from cm_build_config
+529e3b2 repopick: handle hardware_ril/ril-caf
+df45e9f repopick: skip abandoned commits
+00cbe08 Adding msm8909 as a QCOM board platform
+
+   * device/bq/vegetalte/
+8ccf1bc Overlay: Disable led pulse settings
+4e44b62 liblight: Fix some issues Based on @dh-harald changes for Xiaomi Mi4i
+c498b38 Add Tap To Wake support
+52e7e7e Updates in init.qcom.rc
+
+   * device/qcom/common/
+9cb2917 Adding init for msm8909
+
+   * external/stagefright-plugins/
+dc2a013 ffmpeg-extractor: Fix deadlock when stopping the reader thread
+
+   * external/whispersystems/WhisperPush/
+82f94ba Automatic translation import
+
+   * frameworks/base/
+31eb21b Remove duplicate audio: Tejat is Argon
+3d26159 Fingerprint: Allow disabling of vibration
+4557053 SystemUI : Toggle nav item visibility based on IME
+e61da47 PackageManager: Move fingerprint feature out of android namespace.
+1cd9676 core/SystemUI: Remove zh-rHK CAF translations
+95757ef Automatic translation import
+48469b1 SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader
+f5cacbf ResolverActivity: reduce elevation to make it flat
+24e19bf base: hide qs tiles with sensitive data
+a989503 SettingsProvider: don't set default value for advanced mode
+c9215ea Add support for Samsung extended AGPS
+f275fc4 Added show volume panel tile to QS
+8472912 LEDs Brightness [2/2]: Lights notifications brightness support
+e3c51fe Lights with Screen On [1/2]: Optional allowment of lights
+
+   * frameworks/native/
+11e0aba SurfaceFlinger: Fix integer overflow in Mesh ctor
+94e9c4c libgui: Clear frame number while freeing slot
+e676b55 native: Move fingerprint feature out of android namespace.
+
+   * frameworks/opt/chips/
+afc21fb Merge "Revert "More Chip: use pendingcount instead of counting again"" into cm-12.1
+
+   * frameworks/opt/net/wifi/
+1a10ec2 Merge AU_LINUX_ANDROID_LA.BF64.1.2.1_RB2.05.01.01.081.063 on remote branch
+
+   * hardware/qcom/fm/
+9d2f1c1 Automatic translation import
+
+   * kernel/bq/piccolo/
+2bc156e Merge 1.2.0 & 1.2.1 bq changes
+292dca5 Merge AU_LINUX_ANDROID_LA.BR.1.1.3_RB1.05.01.01.032.048 on remote branch
+e47c7bd Merge "clk: qcom: 8936: Disable GMEM dynamic clock gating"
+f502588 clk: qcom: 8936: Disable GMEM dynamic clock gating
+12b3880 iommu: msm: make iommu map and unmap atomic
+29925e3 iommu: msm: Populate context banks at the end of IOMMU probe
+71b5187 iommu: msm: remove CONFIG_MSM_IOMMU_TLBINVAL_ON_MAP
+4496277 iommu: msm: move msm_iommu_register_notify
+dff8a74 iommu: msm: Invalidate properly from iommu_unmap
+ef7b3fa msm: kgsl: Release process memory outside of mutex to avoid a deadlock
+8310481 ARM: dts: msm: Update the mpm bypass list for msm8939-v3.0
+
+   * kernel/bq/vegetalte/
+292dca5 Merge AU_LINUX_ANDROID_LA.BR.1.1.3_RB1.05.01.01.032.048 on remote branch
+e47c7bd Merge "clk: qcom: 8936: Disable GMEM dynamic clock gating"
+9231ec4 input: touchscreen: ft5x06: Do it more easily for CMHW Tap To Wake control
+5027940 Revert "input: touchscreen: ft5x06: Enable Double Tap by default"
+f502588 clk: qcom: 8936: Disable GMEM dynamic clock gating
+12b3880 iommu: msm: make iommu map and unmap atomic
+29925e3 iommu: msm: Populate context banks at the end of IOMMU probe
+71b5187 iommu: msm: remove CONFIG_MSM_IOMMU_TLBINVAL_ON_MAP
+4496277 iommu: msm: move msm_iommu_register_notify
+dff8a74 iommu: msm: Invalidate properly from iommu_unmap
+ef7b3fa msm: kgsl: Release process memory outside of mutex to avoid a deadlock
+8310481 ARM: dts: msm: Update the mpm bypass list for msm8939-v3.0
+
+   * packages/apps/AudioFX/
+91d6891 Automatic translation import
+
+   * packages/apps/Bluetooth/
+67081fd Automatic translation import
+
+   * packages/apps/BluetoothExt/
+8b093e6 Automatic translation import
+
+   * packages/apps/CMAccount/
+b274bb5 Automatic translation import
+
+   * packages/apps/CMBugReport/
+10269b9 Automatic translation import
+
+   * packages/apps/CMFileManager/
+0f51785 Automatic translation import
+
+   * packages/apps/CMUpdater/
+a22cba8 Automatic translation import
+
+   * packages/apps/Calculator/
+3045e4c Automatic translation import
+
+   * packages/apps/Calendar/
+dd1dd45 Automatic translation import
+
+   * packages/apps/Camera2/
+597cd76 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+a31f1e2 Automatic translation import
+
+   * packages/apps/Contacts/
+30fd65e Automatic translation import
+
+   * packages/apps/ContactsCommon/
+46669c6 Automatic translation import
+2199d64 LookupProvider updates
+
+   * packages/apps/DeskClock/
+c1b451b DeskClock: Externalize permissions to CMSDK.
+3fc8d67 DeskClock: Utilize cyanogenmod.permission.MODIFY_PROFILES.
+6f61453 Automatic translation import
+
+   * packages/apps/Dialer/
+9caca68 Automatic translation import
+
+   * packages/apps/Eleven/
+cd2937a Automatic translation import
+
+   * packages/apps/Email/
+a048f26 Automatic translation import
+
+   * packages/apps/Gallery2/
+218cfbb Automatic translation import
+
+   * packages/apps/InCallUI/
+5db0800 Automatic translation import
+
+   * packages/apps/LockClock/
+e379cd2 Automatic translation import
+
+   * packages/apps/Mms/
+a380361 Automatic translation import
+
+   * packages/apps/Settings/
+91db20a settings: check bt pan service before use it
+4720d1b Automatic translation import
+66ed485 settings: hide qs tiles with sensitive data
+055e70f Settings: fix up advanced mode logic
+4289d16 Settings: Always enable the per-app pulse light settings
+c788562 Added show volume to tile chooser
+d222ae5 LEDs Brightness [1/2]: Lights notifications brightness support
+822fe6d Lights with Screen On [2/2]: Optional allowment of lights
+
+   * packages/apps/SetupWizard/
+97af685 SetupWizard: Handle xfinity captival portal
+97c37be SetupWizard: Check for frp in finish receiver
+9ce4c4f Automatic translation import
+
+   * packages/apps/SoundRecorder/
+27f88f0 Automatic translation import
+
+   * packages/apps/Stk/
+3ff329e Automatic translation import
+
+   * packages/apps/Terminal/
+48527b3 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+4733494 Automatic translation import
+
+   * packages/apps/Trebuchet/
+e61c189 Automatic translation import
+41106d9 Reset default view camera distance
+
+   * packages/apps/TvSettings/
+68576f9 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+b440e37 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+a1bc171 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+9762ec8 Revert "MmsProvider : Add ability to get thread information in search"
+
+   * packages/providers/ThemesProvider/
+29f1d16 Specify locale when using String.format()
+
+   * packages/services/Mms/
+d55f960 Automatic translation import
+
+   * packages/services/Telecomm/
+c7306c2 Automatic translation import
+
+   * packages/services/Telephony/
+724fb11 Automatic translation import
+2f29215 Network Settings: don't crash on bad lookup
+
+   * packages/wallpapers/PhotoPhase/
+a556392 Automatic translation import
+
+   * prebuilts/cmsdk/
+09001ca prebuilts/cmsdk: Update latest api text file.
+505e076 prebuilts/cmsdk: Update api text for CMSettings
+8fa9722 prebuilts/cmsdk: Update api text for Hardware
+
+   * vendor/cm/
+1e116da vendor/cm: Start building in CMSettingsProvider.
+80145f3 Fix Airtel APN Selection
+78822da Updated APN settings for Latvian operators
+0e3db25 Rogers LTE apn fix?
+f9b05b9 Fix Movistar APNs
+
+   * vendor/cmsdk/
+bc2ea6b cmsdk: Update documentation for HAF permission.
+04569c7 cmsdk: Update tests for new ALARM permissions.
+9971604 cmsdk: Update cm-api for hasSensitiveData() and new permissions.
+7f17704 cmsdk: Add permissions for ALARMS.
+0523911 cmsdk: Enforce cyanogenmod.permission.MODIFY_PROFILES for profiles.
+88bc996 cmsdk: Fix toast in CMHardwareTest.
+c0c27a6 cmsdk: Add preliminary hardware manager tests.
+3a502e9 cmsdk: Change parceling for DisplayMode.
+c5fa7bc cmsdk: Fix spelling error in CMSettingsProvider makefile.
+40a46bd BugFix: Fix potential NPEs with getService()
+6850732 Automatic translation import
+95dadd8 cmsdk: allow custom tiles to set the new qstile's sensitive data flag
+0eb2999 Add CMSettingsProvider and CMDatabaseHelper
+e949433 cmsdk: Build in the Manifest and R classes for the sdk.
+
