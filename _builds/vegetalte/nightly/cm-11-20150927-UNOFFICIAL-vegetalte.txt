@@ -1,0 +1,63 @@
+===================================
+Since Tue Sep 22 09:36:17 UTC 2015
+===================================
+
+
+   * device/bq/vegetalte/
+e57724d Overlay: Our device dont support wifi dual band
+ca35106 sepolicy: Adress some denials
+ae8906a Overlay: Add keylayout
+864eb29 Update wifi config
+3d1f5e4 wifi: Update config
+2fccc5a Update Vold flags
+5642027 Reorganize & remove unused config
+14dcfe4 Add fingerprint
+9cd8a3a Remove FM stuff
+5a4006a cmhw: Add Vibrator control support
+3cfd31e cmhw: TapToWake: Enable only if control path exists & cache setting state
+b93cba4 liblight: Fix blink
+1a87876 liblight: Fix some issues Based on @dh-harald changes for Xiaomi Mi4i
+d628012 Add Tap To Wake support
+
+   * frameworks/base/
+0e18efe National roaming info for new Tuenti MNC in Spain
+7c6bbb3 Buttons: Allow setting default long-press app switch behavior
+
+   * kernel/bq/vegetalte/
+5319996 vegetalte: config: Dont build as modules & cleanup
+8a084e5 vegetalte: config: Stop log spam
+71bac4e qpnp-vibrator: Implement sysfs interface for vibrator intensity control
+c64afdc input: touchscreen: ft5x06: Do it more easily for CMHW Tap To Wake control
+4026d88 Revert "input: touchscreen: ft5x06: Enable Double Tap by default"
+e4ad3d7 media: radio: Fix building and loading the IRIS transport
+
+   * packages/apps/Settings/
+ae0f055 Buttons: Allow setting default long-press app switch behavior (2/2)
+
+   * vendor/bq/
+dc4c5bf Remove unused camera blob
+72e29c1 Remove FM blobs
+
+   * vendor/cm/
+19de552 Add new Tuenti MNC SPN override name
+
+===================================
+Since Fri Sep 18 14:52:37 UTC 2015
+===================================
+
+
+===================================
+Since Wed Sep 16 14:47:10 UTC 2015
+===================================
+
+
+===================================
+Since Tue Sep  8 13:06:20 UTC 2015
+===================================
+
+
+===================================
+Since Wed Sep  2 10:16:29 UTC 2015
+===================================
+
+
